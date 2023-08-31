@@ -26,7 +26,7 @@
 		</script>
 	</head>
 	<body>
-		<button id="lotto">로또번호 추천</button>
+		<button id="lotto">로또번호 추천입니다.</button>
 		<div id="msg"></div>
 	</body>
 </html>
