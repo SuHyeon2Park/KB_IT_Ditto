@@ -41,7 +41,7 @@ public class MyRestController {
 		String msg = no + ":";
 		int code = -999;
 		if (com_num < no) {
-			msg += "낮춰주세요";
+			msg += "낮춰주세요!!!!";
 			code = -1;
 		} else if (com_num > no) {
 			msg += "높여주세요";
