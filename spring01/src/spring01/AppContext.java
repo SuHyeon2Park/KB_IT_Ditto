@@ -6,12 +6,12 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
 
 
-@Configuration //ÀÚ¹ÙÅ¬·¡½º·Î ºó µî·ÏÇÏ´Â ¹æ¹ý.
-//@Import(AppContext2.class) Autowired¿Í °°Àº ±â´ÉÀ» ¼öÇàÇÏ´Â ´Ù¸¥¹æ¹ý
-public class AppContext { // ÇØ´ç Å¬·¡½º ¸íÀº AppContext¸»°í ´Ù¸¥ ¸íÀ¸·Î ÇØµµ µÈ´Ù. 
-	//¹Ø¿¡ ÀÖ´Â ¾ÖµéÀº °´Ã¼Á¶¸³±â ¶ó°í ºÎ¸¥´Ù.
+@Configuration //ï¿½Ú¹ï¿½Å¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ï´ï¿½ ï¿½ï¿½ï¿½.
+//@Import(AppContext2.class) Autowiredï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½ ï¿½Ù¸ï¿½ï¿½ï¿½ï¿½
+public class AppContext { // ï¿½Ø´ï¿½ Å¬ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ AppContextï¿½ï¿½ï¿½ï¿½ ï¿½Ù¸ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Øµï¿½ ï¿½È´ï¿½. 
+	//ï¿½Ø¿ï¿½ ï¿½Ö´ï¿½ ï¿½Öµï¿½ï¿½ï¿½ ï¿½ï¿½Ã¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½Î¸ï¿½ï¿½ï¿½.
 	
-	@Autowired //ÀÚµ¿ÁÖÀÔ±â´É
+	@Autowired //ï¿½Úµï¿½ï¿½ï¿½ï¿½Ô±ï¿½ï¿½
 	private MyLog log;
 	@Bean
 	public HelloService hello() {
@@ -19,9 +19,9 @@ public class AppContext { // ÇØ´ç Å¬·¡½º ¸íÀº AppContext¸»°í ´Ù¸¥ ¸íÀ¸·Î ÇØµµ µÈ
 	}
 	@Bean
 	public MyCalc mc() {
-		//return new MyCalc( filelog() ); // »ý¼ºÀÚ¸¦ ÅëÇÑ DI
+		//return new MyCalc( filelog() ); // ï¿½ï¿½ï¿½ï¿½ï¿½Ú¸ï¿½ ï¿½ï¿½ï¿½ï¿½ DI
 		
-		//Setter¸Þ¼­µå¸¦ ÅëÇÑ DI
+		//Setterï¿½Þ¼ï¿½ï¿½å¸¦ ï¿½ï¿½ï¿½ï¿½ DIfdfddfdfdfdfdfd
 		MyCalc mc = new MyCalc();
 		mc.setLog(log);
 		return mc; 
